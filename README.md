@@ -31,11 +31,10 @@ Wearable glove containing MPU6050, flex sensors, Arduino Nano, and HC-05 Bluetoo
 
 
 
-### 🔌 Hardware Setup
+### 🔌 Complete Setup
 
-Complete wiring and connection setup.
 
-![Hardware Setup](images/hardware_connections.jpg)
+
 ## ✨ Features
 
 - Real-time hand gesture detection
