@@ -19,14 +19,16 @@ An MPU6050 accelerometer and gyroscope sensor detects hand orientation and movem
 
 Complete view of the ESP32-based gesture-controlled robotic arm.
 
-![Robotic Arm](images/robotic_arm.jpg)
+
+<img width="1280" height="960" alt="WhatsApp Image 2026-07-28 at 4 19 17 PM" src="https://github.com/user-attachments/assets/b23fe145-a4fb-4dfd-97f5-9f4b18455977" />
 
 
 ### 🧤 Gesture Control Glove
 
 Wearable glove containing MPU6050, flex sensors, Arduino Nano, and HC-05 Bluetooth module.
 
-![Gesture Glove](images/glove.jpg)
+<img width="996" height="1280" alt="WhatsApp Image 2026-07-28 at 4 24 56 PM" src="https://github.com/user-attachments/assets/a2baa62a-541d-4df9-b317-75102648abc2" />
+
 
 
 ### 🔌 Hardware Setup
