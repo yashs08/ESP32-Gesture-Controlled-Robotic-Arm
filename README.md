@@ -63,6 +63,13 @@ https://github.com/user-attachments/assets/91e3bb3d-6024-4c5e-a781-9786de11e460
 - 5V Power Supply
 - 9V Battery
 
+## ⚠️ Note: Uploading Arduino Nano Code
+
+While uploading code to the Arduino Nano, disconnect the HC-05 Bluetooth module from the RX and TX pins.
+
+The HC-05 uses the same UART communication pins used for Arduino programming. Keeping it connected during upload may cause upload errors.
+
+Reconnect the HC-05 after successful upload to resume Bluetooth communication.
 ---
 
 ## 💻 Software & Technologies
