@@ -13,7 +13,27 @@ The system allows users to control a robotic arm using hand gestures.
 An MPU6050 accelerometer and gyroscope sensor detects hand orientation and movement. The ESP32 processes the sensor data and controls servo motors through the PCA9685 PWM driver to achieve robotic arm movement.
 
 ---
+## 📸 Project Gallery
 
+### 🤖 Robotic Arm
+
+Complete view of the ESP32-based gesture-controlled robotic arm.
+
+![Robotic Arm](images/robotic_arm.jpg)
+
+
+### 🧤 Gesture Control Glove
+
+Wearable glove containing MPU6050, flex sensors, Arduino Nano, and HC-05 Bluetooth module.
+
+![Gesture Glove](images/glove.jpg)
+
+
+### 🔌 Hardware Setup
+
+Complete wiring and connection setup.
+
+![Hardware Setup](images/hardware_connections.jpg)
 ## ✨ Features
 
 - Real-time hand gesture detection
@@ -59,5 +79,60 @@ An MPU6050 accelerometer and gyroscope sensor detects hand orientation and movem
 4. Control signals are generated for servo motors.
 5. Robotic arm replicates the user's hand movement.
 
-### System Flow
+## 🔌 Hardware Connections
+
+The gesture-controlled robotic arm consists of two main units:
+
+1. **Gesture Glove Unit**
+2. **Robotic Arm Control Unit**
+
+### 🧤 Gesture Glove Unit
+
+The glove captures hand movements using MPU6050 and flex sensors. Arduino Nano processes the sensor data and sends commands wirelessly through the HC-05 Bluetooth module.
+
+<img width="1755" height="1660" alt="Glove" src="https://github.com/user-attachments/assets/80710722-1e91-4a88-ad7d-5d573d560fb1" />
+
+### 🤖 Robotic Arm Control Unit
+
+The ESP32 receives Bluetooth data and controls the servo motors through the PCA9685 PWM servo driver.
+
+ <img width="1989" height="1824" alt="Untitled Sketch_bb" src="https://github.com/user-attachments/assets/77d21202-645d-4140-9dfe-b32cf26172df" />
+
+## 🛠️ Challenges Faced & Solutions
+
+### 1. Servo Motor Power Issue
+
+**Problem:**  
+MG995 servo motors require high current, and using a single power source caused servo jitter and unstable movement.
+
+**Solution:**  
+Used an external 5V power supply with a buck converter and provided a common ground between ESP32, PCA9685, and servo power supply.
+
+
+### 2. Sensor Calibration
+
+**Problem:**  
+MPU6050 and flex sensor values varied depending on hand position and user movement.
+
+**Solution:**  
+Implemented sensor calibration and mapped raw sensor values into suitable servo angles for accurate movement.
+
+
+### 3. Bluetooth Communication
+
+**Problem:**  
+Reliable wireless data transfer between the glove and robotic arm was required.
+
+**Solution:**  
+Used HC-05 Bluetooth communication with UART protocol to transmit gesture data from Arduino Nano to ESP32.
+
+
+### 4. Servo Control
+
+**Problem:**  
+Directly controlling multiple servo motors from the microcontroller was difficult due to limited PWM outputs.
+
+**Solution:**  
+Used PCA9685 16-channel PWM servo driver to generate stable PWM signals and control multiple servo motors.
+
 
