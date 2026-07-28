@@ -33,15 +33,10 @@ Wearable glove containing MPU6050, flex sensors, Arduino Nano, and HC-05 Bluetoo
 
 ### 🔌 Complete Setup
 
+The following video demonstrates the real-time working of the gesture-controlled robotic arm.
 
 
 https://github.com/user-attachments/assets/91e3bb3d-6024-4c5e-a781-9786de11e460
-
-
-
-
-
-
 
 ## ✨ Features
 
